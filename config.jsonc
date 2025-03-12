@@ -1,0 +1,19 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/keyboard","battery"],
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format": "{:%a %Y-%m-%d %H:%M:%S %Z}",
+    },
+    "custom/keyboard": {
+        "format": "{}",
+        "exec": "echo $(hyprctl devices | grep -B 7 'main: yes' | grep 'active keymap' | awk '{print $3}')",
+        "interval": 1
+    }
+}
