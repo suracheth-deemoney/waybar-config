@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "bottom",
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-center": ["tray","clock"],
     "modules-right": ["custom/keyboard","battery"],
     "battery": {
         "format": "{capacity}% {icon}",
