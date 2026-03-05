@@ -30,14 +30,6 @@ fc-cache -fv
 sudo apt install -y fonts-noto-core
 ```
 
-## Hyprland Autostart
-
-Add the following to `~/.config/hypr/hyprland.conf` to autostart mako (notification daemon):
-
-```ini
-exec-once = mako &
-```
-
 ## Modules
 
 | Module | Description |
