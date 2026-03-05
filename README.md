@@ -1,6 +1,6 @@
 # Waybar Config
 
-A Waybar configuration for Hyprland with a light theme based on Catppuccin accents.
+A Waybar configuration for Hyprland with an ashell-inspired light theme with Catppuccin-compatible accent colors.
 
 ## Dependencies
 
@@ -16,18 +16,11 @@ This config uses **JetBrainsMono Nerd Font** for icon glyphs. Install it manuall
 
 ```bash
 mkdir -p ~/.local/share/fonts/JetBrainsMono
-cd ~/.local/share/fonts/JetBrainsMono
-curl -fLo JetBrainsMono.zip \
+curl -fLo ~/.local/share/fonts/JetBrainsMono/JetBrainsMono.zip \
   "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
-unzip JetBrainsMono.zip
-rm JetBrainsMono.zip
+unzip ~/.local/share/fonts/JetBrainsMono/JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
+rm ~/.local/share/fonts/JetBrainsMono/JetBrainsMono.zip
 fc-cache -fv
-```
-
-**Noto Sans** (fallback font) is available via:
-
-```bash
-sudo apt install -y fonts-noto-core
 ```
 
 ## Modules
